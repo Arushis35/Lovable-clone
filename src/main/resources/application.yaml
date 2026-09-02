@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Lovable-clone
+    description: This is a description
+
+
