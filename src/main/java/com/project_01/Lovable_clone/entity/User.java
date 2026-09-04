@@ -18,5 +18,5 @@ public class User {
     String avatar_url;
     Instant createdAt;
     Instant updated_At;
-    Instant deletedAt;
+    Instant deletedAt; //sof delete
 }
