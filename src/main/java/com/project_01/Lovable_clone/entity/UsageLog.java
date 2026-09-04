@@ -1,25 +1,24 @@
 package com.project_01.Lovable_clone.entity;
 
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
 import java.time.Instant;
 
-@Getter
 @Setter
+@Getter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
-public class Project {
+public class UsageLog {
     Long id;
-    String name;
-    User owner;
-    Boolean isPublic=false;
+    User user;
+    Project project;
 
+    String action;
+    Integer tokensUsed;
+    Integer durationMs;
+
+    String metaData;
     Instant createdAt;
-    Instant updatedAt;
-    Instant deletedAt;
-
 }

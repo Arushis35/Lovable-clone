@@ -1,6 +1,6 @@
 package com.project_01.Lovable_clone.entity;
 
-import jakarta.persistence.ManyToOne;
+import com.project_01.Lovable_clone.enums.SubscriptionStatus;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;

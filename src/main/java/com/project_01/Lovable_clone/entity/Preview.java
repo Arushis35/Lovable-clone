@@ -1,7 +1,8 @@
 package com.project_01.Lovable_clone.entity;
 
+
+import com.project_01.Lovable_clone.enums.PreviewStatus;
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
@@ -11,15 +12,16 @@ import java.time.Instant;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
-public class Project {
+public class Preview {
     Long id;
-    String name;
-    User owner;
-    Boolean isPublic=false;
+    Project project;
+    String namespace;
+    String podName;
+    String previewUrl;
+
+    PreviewStatus status;
+    Instant startedAt;
+    Instant terminatedAt;
 
     Instant createdAt;
-    Instant updatedAt;
-    Instant deletedAt;
-
 }

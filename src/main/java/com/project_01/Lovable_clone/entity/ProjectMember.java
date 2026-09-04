@@ -1,25 +1,21 @@
 package com.project_01.Lovable_clone.entity;
 
+import com.project_01.Lovable_clone.enums.ProjectRole;
 import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.FieldDefaults;
 
 import java.time.Instant;
 
-@Getter
 @Setter
+@Getter
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@AllArgsConstructor
-public class Project {
-    Long id;
-    String name;
-    User owner;
-    Boolean isPublic=false;
-
-    Instant createdAt;
-    Instant updatedAt;
-    Instant deletedAt;
-
+public class ProjectMember {
+    ProjectMemberId Id;
+    Project project;
+    User user;
+    ProjectRole projectRole;
+    Instant invitedAt;
+    Instant acceptedAt;
 }
