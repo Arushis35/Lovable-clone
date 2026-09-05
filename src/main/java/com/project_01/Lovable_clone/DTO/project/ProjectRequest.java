@@ -1,4 +1,6 @@
 package com.project_01.Lovable_clone.DTO.project;
 
-public record ProjectRequest() {
+public record ProjectRequest(
+        String name
+) {
 }

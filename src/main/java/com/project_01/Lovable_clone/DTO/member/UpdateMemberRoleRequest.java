@@ -1,4 +1,8 @@
 package com.project_01.Lovable_clone.DTO.member;
 
-public enum UpdateMemberRoleRequest {
+import com.project_01.Lovable_clone.enums.ProjectRole;
+
+public record UpdateMemberRoleRequest(
+            ProjectRole role
+) {
 }

@@ -1,4 +1,6 @@
 package com.project_01.Lovable_clone.DTO.subscription;
 
-public record PortalResponse() {
+public record PortalResponse(
+        String portalUrl
+) {
 }

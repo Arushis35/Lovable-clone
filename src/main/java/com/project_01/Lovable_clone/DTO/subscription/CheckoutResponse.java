@@ -1,4 +1,6 @@
 package com.project_01.Lovable_clone.DTO.subscription;
 
-public record CheckoutResponse() {
+public record CheckoutResponse(
+        String checkoutUrl
+) {
 }

@@ -1,4 +1,4 @@
-package com.project_01.Lovable_clone.DT0_AUTH;
+package com.project_01.Lovable_clone.DTO.auth;
 
 public record LoginRequest(
         String email,

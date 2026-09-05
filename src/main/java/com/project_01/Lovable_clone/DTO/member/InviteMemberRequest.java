@@ -1,4 +1,10 @@
 package com.project_01.Lovable_clone.DTO.member;
 
-public record InviteMemberRequest() {
+import com.project_01.Lovable_clone.enums.ProjectRole;
+
+public record InviteMemberRequest(
+        String email,
+        ProjectRole role
+
+) {
 }
